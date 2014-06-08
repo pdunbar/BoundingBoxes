@@ -1,9 +1,7 @@
 require_relative '../lib/bounding_box'
-require 'pry'
 
 describe BoundingBox do
   let(:box) { BoundingBox.new(5.0, 10.0, 25.0, 50.0) }
-
   it 'has a left edge' do
     expect(box.left).to eq(5.0)
   end
