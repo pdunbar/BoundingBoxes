@@ -6,8 +6,8 @@ class BoundingArea
   end
 
   def contains_point?(x,y)
-    @x=x.to_i
-    @y=y.to_i
+    @x=x.to_f
+    @y=y.to_f
 
     @rects.each do |rect|
       if rect.contains_point?(x,y) == true
